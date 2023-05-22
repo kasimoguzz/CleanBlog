@@ -69,6 +69,10 @@
         </div>
       </div>
     </div>
+    <div style="width:300px;margin:0 auto;display: flex;">
+      <a href="/posts/edit/<%= post._id %>" class="btn btn-primary" style="margin-right: 10px;">Edit Post</a>
+      <a href="/posts/<%= post._id %>?_method=DELETE" class="btn btn-primary" onclick="return confirm('ARE YOU SURE?')">Delete Post</a>
+    </div>
   </article>
 
   <hr>
